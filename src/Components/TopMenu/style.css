@@ -1,0 +1,18 @@
+.menuContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5px;
+}
+.menuContainer div {
+  width: 33.3vw;
+  border: 1px black solid;
+  padding-right: 40px;
+  padding-left: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.menuContainer p {
+  margin-bottom: 0;
+}

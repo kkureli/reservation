@@ -1,0 +1,9 @@
+.roomInformationDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.roomInformationDiv :nth-child(2) {
+  margin-left: 5px;
+}

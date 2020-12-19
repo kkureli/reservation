@@ -1,0 +1,14 @@
+.backPayButtons {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 630px) {
+  .backPayButtons {
+    flex-direction: column;
+  }
+
+  .backPayButtons :nth-child(2) {
+    margin-top: 10px;
+  }
+}

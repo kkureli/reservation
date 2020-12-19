@@ -1,0 +1,18 @@
+.dateInformationDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.dateInformationDiv :nth-child(2) {
+  margin-left: 5px;
+}
+
+@media (max-width: 630px) {
+  .dateInformationDiv {
+    flex-direction: column;
+  }
+  .dateInformationDiv :nth-child(2) {
+    margin-left: 0px;
+  }
+}

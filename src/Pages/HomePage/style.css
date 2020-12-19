@@ -1,0 +1,6 @@
+@media (max-width: 630px) {
+  .homeContainer button {
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+}

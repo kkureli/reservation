@@ -1,0 +1,29 @@
+.datePickerContainer {
+  justify-content: flex-start;
+  padding-top: 10px;
+}
+
+.dateSelectRow {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.dateIconInput {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  width: 175px;
+}
+
+.calendarIconContainer {
+  position: absolute;
+  right: 5px;
+}
+
+@media (max-width: 630px) {
+  .dateSelectRow {
+    flex-direction: column;
+  }
+}

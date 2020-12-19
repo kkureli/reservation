@@ -1,0 +1,13 @@
+.formContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.roomOptionsDiv {
+  display: flex;
+  flex-direction: row;
+}
+
+.roomOptionsDiv input {
+  margin-left: 10px;
+}

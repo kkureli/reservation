@@ -1,0 +1,16 @@
+#PaymentForm {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#PaymentForm input {
+  margin-top: 10px;
+  border-color: black;
+  margin-left: 5px;
+}
+
+@media (max-width: 630px) {
+  #PaymentForm input {
+    margin-left: 10;
+  }
+}
