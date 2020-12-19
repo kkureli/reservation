@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  HashRouter,
+} from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-datepicker/dist/react-datepicker.css";
 import "react-credit-cards/es/styles-compiled.css";
@@ -18,14 +23,14 @@ const App = () => {
   return (
     <Provider store={store}>
       <div className="app">
-        <Router>
+        <HashRouter>
           <TopMenu />
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route exact path="/roomselection" component={RoomSelectPage} />
             <Route exact path="/payment" component={PaymentPage} />
           </Switch>
-        </Router>
+        </HashRouter>
       </div>
     </Provider>
   );

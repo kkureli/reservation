@@ -28,34 +28,31 @@ const PaymentPage = ({
   const [modalWarningText, setModalWarningText] = useState("");
   const [success, setSuccess] = useState(false);
   const history = useHistory();
+
   const goBack = () => history.push("/roomselection");
+
+  const showWarning = (text) => {
+    setModalWarningText(text);
+    setSuccess(false);
+    setShowModalWarning(true);
+  };
 
   const paymentButtonPressed = () => {
     const { name, number, expiry, cvc } = cardInformations;
     if (name === "") {
-      setModalWarningText("Kart Uzerindeki Isim bos olmamali");
-      setShowModalWarning(true);
-      setSuccess(false);
+      showWarning("Kart Uzerindeki Isim bos olmamali");
     } else if (number === "") {
-      setModalWarningText("Kartinizin numarasini yaziniz");
-      setShowModalWarning(true);
-      setSuccess(false);
-    } else if (number.length < 16) {
-      setModalWarningText("Kart numarasi 16 karakter olmali");
-      setShowModalWarning(true);
-      setSuccess(false);
+      showWarning("Kartinizin numarasini yaziniz");
+    } else if (number.length < 19) {
+      showWarning("Kart numarasi 16 karakter olmali");
     } else if (expiry === "") {
-      setModalWarningText("Kartinizin son kullanim tarihini yaziniz");
-      setShowModalWarning(true);
-      setSuccess(false);
+      showWarning("Kartinizin son kullanim tarihini yaziniz");
+    } else if (expiry.length < 5) {
+      showWarning("Son kullanim tarihi hatali");
     } else if (cvc === "") {
-      setModalWarningText("Kartinizin arkasindaki cvc kodunu yaziniz");
-      setShowModalWarning(true);
-      setSuccess(false);
+      showWarning("Kartinizin arkasindaki cvc kodunu yaziniz");
     } else if (cvc.length < 3) {
-      setModalWarningText("CVC kodu 3 karakter olmali");
-      setShowModalWarning(true);
-      setSuccess(false);
+      showWarning("CVC kodu 3 karakter olmali");
     } else {
       setModalWarningText("Rezervasyonunuz basari ile tamamlanmistir!");
       setSuccess(true);

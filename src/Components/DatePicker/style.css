@@ -14,7 +14,11 @@
   flex-direction: row;
   position: relative;
   align-items: center;
-  width: 175px;
+  width: 170px;
+}
+
+.dateIconInput input {
+  width: 170px;
 }
 
 .calendarIconContainer {

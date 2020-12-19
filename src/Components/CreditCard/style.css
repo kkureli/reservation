@@ -1,3 +1,13 @@
+.rccs {
+  margin-left: 0;
+}
+.rccs__card {
+  width: 70vw;
+  max-width: 350px;
+  margin-left: 0;
+  height: 40vw;
+  max-height: 200px;
+}
 #PaymentForm {
   margin-top: 10px;
   margin-bottom: 10px;
