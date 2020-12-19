@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/reservation/static/css/main.0db36c91.chunk.css",
-    "main.js": "/reservation/static/js/main.f41cca18.chunk.js",
-    "main.js.map": "/reservation/static/js/main.f41cca18.chunk.js.map",
+    "main.css": "/reservation/static/css/main.f550c273.chunk.css",
+    "main.js": "/reservation/static/js/main.80cbc85f.chunk.js",
+    "main.js.map": "/reservation/static/js/main.80cbc85f.chunk.js.map",
     "runtime-main.js": "/reservation/static/js/runtime-main.b3a48b52.js",
     "runtime-main.js.map": "/reservation/static/js/runtime-main.b3a48b52.js.map",
     "static/css/2.7a81b0c6.chunk.css": "/reservation/static/css/2.7a81b0c6.chunk.css",
@@ -12,14 +12,14 @@
     "static/js/3.d151668d.chunk.js.map": "/reservation/static/js/3.d151668d.chunk.js.map",
     "index.html": "/reservation/index.html",
     "static/css/2.7a81b0c6.chunk.css.map": "/reservation/static/css/2.7a81b0c6.chunk.css.map",
-    "static/css/main.0db36c91.chunk.css.map": "/reservation/static/css/main.0db36c91.chunk.css.map",
+    "static/css/main.f550c273.chunk.css.map": "/reservation/static/css/main.f550c273.chunk.css.map",
     "static/js/2.d720dfe1.chunk.js.LICENSE.txt": "/reservation/static/js/2.d720dfe1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b3a48b52.js",
     "static/css/2.7a81b0c6.chunk.css",
     "static/js/2.d720dfe1.chunk.js",
-    "static/css/main.0db36c91.chunk.css",
-    "static/js/main.f41cca18.chunk.js"
+    "static/css/main.f550c273.chunk.css",
+    "static/js/main.80cbc85f.chunk.js"
   ]
 }
