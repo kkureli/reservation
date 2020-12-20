@@ -13,6 +13,7 @@ import {
   setViewSelection,
 } from "../../redux/actions";
 import ModalComponent from "../../Components/ModalComponent/ModalComponent";
+import isCardValid from "../../utils/isCardValid";
 const PaymentPage = ({
   cardInformations,
   setCardInformations,
@@ -38,21 +39,8 @@ const PaymentPage = ({
   };
 
   const paymentButtonPressed = () => {
-    const { name, number, expiry, cvc } = cardInformations;
-    if (name === "") {
-      showWarning("Kart Uzerindeki Isim bos olmamali");
-    } else if (number === "") {
-      showWarning("Kartinizin numarasini yaziniz");
-    } else if (number.length < 19) {
-      showWarning("Kart numarasi 16 karakter olmali");
-    } else if (expiry === "") {
-      showWarning("Kartinizin son kullanim tarihini yaziniz");
-    } else if (expiry.length < 5) {
-      showWarning("Son kullanim tarihi hatali");
-    } else if (cvc === "") {
-      showWarning("Kartinizin arkasindaki cvc kodunu yaziniz");
-    } else if (cvc.length < 3) {
-      showWarning("CVC kodu 3 karakter olmali");
+    if (!isCardValid(cardInformations).isValid) {
+      showWarning(isCardValid(cardInformations).warningText);
     } else {
       setModalWarningText("Rezervasyonunuz basari ile tamamlanmistir!");
       setSuccess(true);
